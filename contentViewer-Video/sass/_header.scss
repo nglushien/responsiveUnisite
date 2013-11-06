@@ -1,0 +1,40 @@
+@import "_configuration";
+
+#micrositeHeader {
+  background:url(../images/headerBackground.png)repeat-x 0 0;
+  color: $microsite-header-color;
+  position: relative;
+  padding: 10px 20px;
+
+  #micrositeHeaderBanner{
+
+    p { margin: 0 !important; }
+
+    h1 {
+      font-size: 26px;
+      line-height: 65px;
+      padding: 0 0 0 91px;
+      margin: 0;
+    }
+
+    img.sap{
+      float: left;
+      margin: 12px 0 0;
+    }
+
+    img.ibm{
+      float: right;
+      margin: 12px 0 0;
+    }
+
+  }
+
+  #micrositeHeaderNavigation {
+    display: none;
+  }
+
+  #micrositeSocialMediaNav{
+    display: none;
+  }
+
+}

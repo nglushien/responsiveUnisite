@@ -1,0 +1,1224 @@
+/* normalize browser defaults as much as possible */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* 'namespace' as much of normalize as possible due to embedded microsites */
+#micrositeContainer {
+  background-color: #fff;
+  color: #000;
+  font-family: arial, sans-serif;
+  font-size: 80%;
+}
+#micrositeContainer * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#micrositeContainer h1, #micrositeContainer h2, #micrositeContainer h3, #micrositeContainer h4, #micrositeContainer h5, #micrositeContainer h6 {
+  line-height: 1em;
+  margin: 0 0 1em;
+  padding: 0;
+}
+#micrositeContainer p {
+  margin: 0 0 1em;
+}
+#micrositeContainer a {
+  color: #274b6b;
+  text-decoration: none;
+}
+#micrositeContainer a:visited {
+  color: #551a8b;
+}
+#micrositeContainer a:hover {
+  color: #06e;
+  text-decoration: underline;
+}
+#micrositeContainer a:focus {
+  background-color: #eee;
+  border: none;
+}
+#micrositeContainer a:hover, #micrositeContainer a:active {
+  outline: 0;
+}
+#micrositeContainer b, #micrositeContainer strong {
+  font-weight: bold;
+}
+#micrositeContainer blockquote {
+  margin: 1em 40px;
+}
+#micrositeContainer hr {
+  border-top: 1px solid #ccc;
+  border: 0;
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+}
+#micrositeContainer pre, #micrositeContainer code, #micrositeContainer kbd, #micrositeContainer samp {
+  _font-family: 'courier new', monospace;
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+#micrositeContainer pre {
+  white-space: pre-wrap;
+  white-space: pre;
+  word-wrap: break-word;
+}
+#micrositeContainer small {
+  font-size: 85%;
+}
+#micrositeContainer sub, #micrositeContainer sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+#micrositeContainer sup {
+  top: -0.5em;
+}
+#micrositeContainer sub {
+  bottom: -0.25em;
+}
+#micrositeContainer ul, #micrositeContainer ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+#micrositeContainer dd {
+  margin: 0 0 0 40px;
+}
+#micrositeContainer nav ul, #micrositeContainer nav ol {
+  list-style-image: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#micrositeContainer img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  vertical-align: middle;
+}
+#micrositeContainer iframe {
+  border: none;
+}
+#micrositeContainer figure {
+  margin: 0;
+}
+#micrositeContainer table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#micrositeContainer th, #micrositeContainer td {
+  vertical-align: top;
+}
+
+#micrositeContainer {
+  border-top: none;
+  margin: 0 0 20px;
+}
+#micrositeContainer #micrositeContainerInner {
+  margin: 0;
+}
+#micrositeContainer #micrositeContainerInner #micrositeContainerCompress {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#micrositeContent {
+  *zoom: 1;
+  margin: 0 20px;
+}
+#micrositeContent:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#micrositeContent #micrositeContentColumnFull {
+  margin: 0;
+}
+#micrositeContent #micrositeContentColumnLeft {
+  float: left;
+  width: 620px;
+}
+#micrositeContent #micrositeContentColumnRight {
+  float: right;
+  width: 300px;
+}
+#micrositeContent .micrositeContentColumnSpan {
+  clear: both;
+}
+
+#micrositeHeader {
+  background: url(../images/headerBackground.png) repeat-x 0 0;
+  color: #666666;
+  position: relative;
+  padding: 10px 20px;
+}
+#micrositeHeader #micrositeHeaderBanner p {
+  margin: 0 !important;
+}
+#micrositeHeader #micrositeHeaderBanner h1 {
+  font-size: 26px;
+  line-height: 65px;
+  padding: 0 0 0 91px;
+  margin: 0;
+}
+#micrositeHeader #micrositeHeaderBanner img.sap {
+  float: left;
+  margin: 12px 0 0;
+}
+#micrositeHeader #micrositeHeaderBanner img.ibm {
+  float: right;
+  margin: 12px 0 0;
+}
+#micrositeHeader #micrositeHeaderNavigation {
+  display: none;
+}
+#micrositeHeader #micrositeSocialMediaNav {
+  display: none;
+}
+
+/* footer */
+#micrositeFooter {
+  clear: both;
+  background-color: #274b6b;
+  color: #666666;
+}
+#micrositeFooter h3 {
+  font-size: 30px;
+  line-height: 40px;
+  padding: 40px;
+  margin: 0;
+}
+
+#micrositeContainer {
+  border: 1px solid #c8c8c8;
+}
+
+.componentHeader {
+  color: #666666;
+  margin: 0 0 8px !important;
+}
+
+.micrositeModuleContainer {
+  margin: 0;
+}
+.micrositeModuleContainer .micrositeModuleHeader {
+  margin: 0;
+}
+.micrositeModuleContainer .micrositeModuleHeader h3 {
+  margin: 0;
+}
+
+/* copy these along with content tabs since they're used in the panel views */
+.mediaBlock, .mediaBlockContent {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}
+
+.mediaBlock img {
+  float: left;
+  margin-right: 10px;
+  display: block;
+}
+
+.oneColList {
+  clear: both;
+}
+.oneColList > ul {
+  clear: both;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  overflow: hidden;
+}
+.oneColList > ul li {
+  border-top: 1px solid #ddd;
+  margin: 15px 0 5px;
+  padding: 15px 0 0;
+}
+.oneColList > ul .viewNow:before {
+  content: '> ';
+}
+.oneColList > ul > li:first-child {
+  border: none;
+  margin-top: 0;
+}
+.oneColList > ul h4 {
+  font-size: 16px;
+  margin: 0 0 5px !important;
+}
+.oneColList > ul h4 a {
+  color: #666 !important;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.oneColList > ul h4 a:visited {
+  color: #333 !important;
+}
+.oneColList > ul p {
+  margin: 0 0 5px !important;
+}
+.oneColList > ul p a {
+  color: #007bc1 !important;
+}
+.oneColList > ul p a:visited {
+  color: #007bc1 !important;
+}
+
+.twoColGrid {
+  clear: both;
+}
+.twoColGrid > ul {
+  clear: both;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  overflow: hidden;
+}
+.twoColGrid > ul > li {
+  clear: left;
+  border-top: 1px solid #ddd;
+  overflow: hidden;
+}
+.twoColGrid > ul > li:first-child {
+  border: none;
+  margin-top: 0;
+}
+.twoColGrid .gridItem {
+  width: 46%;
+  float: left;
+  margin: 15px 10px;
+}
+.twoColGrid .gridItem:first-child {
+  border-right: 1px solid #ddd;
+  padding-right: 10px;
+}
+.twoColGrid .gridItem p {
+  margin: 10px 0 0 !important;
+  line-height: 1.1 !important;
+}
+.twoColGrid .gridItem .mediaBlockImage {
+  width: 80px;
+  height: 100px;
+}
+
+/* Add class .group to parent container. IE8+. */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+#at4-share {
+  display: none !important;
+}
+
+/* bitpipe abstract */
+.resDetail {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 30px 50px;
+}
+
+.resTitleLogo {
+  clear: both;
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+.resTitleLogo h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px !important;
+}
+.resTitleLogo h3 a {
+  color: #15204f;
+}
+.resTitleLogo h4 {
+  color: #666;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.resAbstract {
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+}
+.resAbstract .col1 {
+  float: left;
+  padding-right: 25px;
+  width: 190px;
+}
+.resAbstract .col1 td {
+  font-size: 12px;
+  padding: 0 25px 5px 0;
+  vertical-align: top;
+}
+.resAbstract .col1 td strong {
+  font-weight: bold;
+}
+.resAbstract .col2 {
+  float: left;
+  width: 605px;
+}
+.resAbstract .col2 .abstract {
+  border-top: 1px solid #ccc;
+  padding: 10px 0 0;
+}
+.resAbstract .col2 h5 {
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-top: 2px;
+  text-transform: uppercase;
+}
+.resAbstract .col2 p {
+  margin-bottom: 10px;
+}
+.resAbstract .col2 a.viewNow {
+  background: url(../images/viewNowGradient.png) repeat-x 0 0;
+  border-radius: 8px;
+  color: #fff !important;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0 20px;
+  padding: 5px 30px;
+  text-align: center;
+}
+.resAbstract .col2 a.viewNow:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  text-decoration: none !important;
+}
+
+/* Navigation */
+#whatIsThis {
+  margin-left: 245px;
+  *margin-left: 0;
+  position: absolute;
+  zoom: 1;
+  z-index: 9999;
+}
+
+#whatIsThis li {
+  float: left;
+  display: block;
+  height: 25px;
+  position: relative;
+  z-index: 500;
+}
+
+#whatIsThis li a {
+  border-top: 0;
+  border: 1px solid #999;
+  border-bottom: 0;
+  display: block;
+  font-size: 11px;
+  font-weight: 300;
+  height: 24px;
+  padding: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#whatIsThis a.selected {
+  color: #444;
+  background: #fff;
+}
+
+#whatIsThis ul {
+  box-shadow: 0px 10px 15px 0px #333;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: auto;
+  background: #fff;
+  top: 24px;
+}
+
+#whatIsThis li a:hover {
+  /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+  background: white url("../images/whatsThisArrowHover.png") no-repeat 5px 10px;
+  color: #444;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#whatIsThis li ul li a:first-child {
+  background: white url("../images/whatsThisArrowHover.png") no-repeat 5px 10px;
+  border-radius: 0;
+  color: #444 !important;
+  font-size: 11px;
+  font-weight: 300;
+  height: 24px;
+  padding: 6px 15px 0;
+  text-decoration: none;
+  position: absolute;
+  top: -24px;
+  left: 0;
+  z-index: 10;
+}
+
+#whatIsThis li ul li a.close {
+  background: white url("../images/WhatIsThis_Close.png") no-repeat 5px 6px;
+  color: #666 !important;
+  float: right;
+  font-size: 12px !important;
+  font-weight: bold;
+  padding: 5px 0 0 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#whatIsThis li ul li {
+  display: block;
+  color: #444;
+  height: auto;
+  text-decoration: none;
+  width: 440px;
+  margin: 0 2px 9px 0;
+  padding: 5px 20px 20px;
+}
+#whatIsThis li ul li h4 {
+  font-size: 16px;
+}
+#whatIsThis li ul li p {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+#whatIsThis li ul h4 {
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px 0 10px;
+}
+
+#whatIsThis li ul p {
+  color: #444;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5em !important;
+  margin: 25px 0 0 !important;
+}
+
+#whatIsThis li ul a {
+  background: #0e68c8;
+  border-radius: 3px;
+  border: 0 !important;
+  color: #fff !important;
+  display: block;
+  font-size: 12px;
+  height: 12px;
+  line-height: 1;
+  color: #20204e;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+#whatIsThis li ul a:hover {
+  background: #0b4f98;
+  border-radius: 3px;
+  border: 0 !important;
+  color: #fff !important;
+  display: block;
+  font-size: 12px;
+  height: 12px;
+  line-height: 1;
+  color: #20204e;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+/* for embedded microsites */
+#micrositeAdvertisement {
+  border: 1px solid #b1b1b1;
+  border-bottom: none;
+  height: 25px;
+  background-color: #999;
+  color: #fff;
+  margin: 15px 0 0 0;
+  overflow: hidden;
+}
+
+#micrositeAdvertisement img {
+  float: left;
+  margin: 5px 15px 0;
+}
+
+#micrositeAdvertisement a {
+  background: url("../images/whatsThisArrow.png") no-repeat 5px 9px;
+  color: #fff;
+  float: left;
+  font-size: 12px;
+  margin: 0;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+#micrositeAdvertisement #micrositeClose {
+  float: right;
+}
+
+#micrositeAdvertisement #micrositeClose a {
+  font-weight: normal;
+  background: url(../images/iconMicrositeClose.png) 7px 6px no-repeat;
+  line-height: 14px;
+  padding: 5px 10px 0 20px;
+  display: block;
+  font-size: 12px;
+  color: #fff;
+}
+
+#micrositeAdvertisement #micrositeClose a:hover {
+  text-decoration: none;
+}
+
+.wayfinder {
+  margin: 0 0 15px;
+}
+.wayfinder .wayfinderContent {
+  width: 600px;
+  font-size: 14px;
+  line-height: 2.4 !important;
+}
+.wayfinder h2 {
+  color: #666666;
+  font-size: 21px;
+  margin: 0 0 8px !important;
+}
+.wayfinder.wayfinderImage, .wayfinder.wayfinderVideo {
+  border: 1px solid #ddd;
+  height: 260px;
+  position: relative;
+}
+.wayfinder.wayfinderImage .wayfinderCornerstoneVideo, .wayfinder.wayfinderVideo .wayfinderCornerstoneVideo {
+  border: 1px solid #9f9f9f;
+  height: 280px;
+  padding: 10px;
+  margin: 10px 10px 10px 20px;
+  float: right;
+  width: 480px;
+}
+.wayfinder.wayfinderImage .wayfinderCornerstoneVideo .outer-container, .wayfinder.wayfinderVideo .wayfinderCornerstoneVideo .outer-container {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.wayfinder.wayfinderImage .wayfinderCornerstoneVideo .BrightcoveExperience, .wayfinder.wayfinderVideo .wayfinderCornerstoneVideo .BrightcoveExperience {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.wayfinder.wayfinderImage .wayfinderCornerstoneImage, .wayfinder.wayfinderVideo .wayfinderCornerstoneImage {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+}
+.wayfinder.wayfinderImage .wayfinderContent, .wayfinder.wayfinderVideo .wayfinderContent {
+  width: 500px;
+  margin: 10px 0 0 20px;
+  position: relative;
+  z-index: 1;
+}
+.wayfinder.wayfinderImage .wayfinderContent p, .wayfinder.wayfinderVideo .wayfinderContent p {
+  font-family: arial;
+  font-weight: 300;
+  line-height: 20px;
+}
+.wayfinder.wayfinderImage h2, .wayfinder.wayfinderVideo h2 {
+  width: 400px;
+  line-height: 1.25 !important;
+}
+.wayfinder.wayfinderImage {
+  height: 260px;
+}
+.wayfinder.wayfinderVideo {
+  height: auto;
+  overflow: hidden;
+}
+
+.socialShare-addThis {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  line-height: 0;
+}
+.socialShare-addThis a {
+  display: inline-block;
+  margin: 0 0 0 8px;
+  padding: 0 !important;
+}
+.socialShare-addThis.addThisVertical {
+  position: absolute;
+  top: 0;
+  background: #fff;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(85%, #ffffff), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(left, #ffffff 85%, #dddddd 100%);
+  background-image: -moz-linear-gradient(left, #ffffff 85%, #dddddd 100%);
+  background-image: -o-linear-gradient(left, #ffffff 85%, #dddddd 100%);
+  background-image: linear-gradient(left, #ffffff 85%, #dddddd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd',GradientType=1 );
+}
+.socialShare-addThis.addThisVertical a {
+  display: block;
+  margin: 5px;
+}
+.socialShare-addThis.addThisVertical.addthis_default_style {
+  width: 26px;
+  left: -26px;
+  margin: 0 10px;
+}
+.socialShare-addThis.addThisVertical.addthis_default_style a {
+  margin: 5px;
+}
+.socialShare-addThis.addThisVertical.addthis_20x20_style {
+  width: 35px;
+  left: -37px;
+}
+.socialShare-addThis.addThisVertical.addthis_20x20_style a {
+  margin: 10px;
+}
+.socialShare-addThis.addThisVertical.addthis_32x32_style {
+  width: 52px;
+  left: -63px;
+  margin: 10px;
+}
+.socialShare-addThis.addThisVertical.addthis_32x32_style a {
+  margin: 12px;
+}
+
+.socialShare-outer {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.socialShare-outer .socialShare-inner {
+  margin: 0 auto;
+  position: relative;
+}
+
+.contentTabs {
+  border: 1px solid #dddddd;
+  margin: 0 0 25px;
+  overflow: hidden;
+  position: relative;
+}
+.contentTabs .contentTabsNav {
+  background-color: #fafafa;
+  position: relative;
+}
+.contentTabs .contentTabsNav ul {
+  background-color: white;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+.contentTabs .contentTabsNav li a {
+  color: #666666 !important;
+  background-color: #ececec !important;
+  display: block;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  height: 35px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+.contentTabs .contentTabsNav li a:hover {
+  color: white !important;
+  background-color: #8cb1d2 !important;
+  text-decoration: none !important;
+}
+.contentTabs .contentTabsNav li.active a {
+  color: white !important;
+  background-color: #007bc1 !important;
+  border-bottom: none;
+  position: relative;
+}
+.contentTabs .arrow, .contentTabs .verticalNavigationArrow, .contentTabs.tabsVerticalLeft .contentTabsNav li.active a:after, .contentTabs.tabsVerticalRight .contentTabsNav li.active a:before, .contentTabs .horizontalNavigationArrow, .contentTabs.tabsHorizontalTop .contentTabsNav li.active a:after, .contentTabs.tabsHorizontalBottom .contentTabsNav li.active a:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 0;
+  width: 0;
+}
+.contentTabs .verticalNavigationArrow, .contentTabs.tabsVerticalLeft .contentTabsNav li.active a:after, .contentTabs.tabsVerticalRight .contentTabsNav li.active a:before {
+  top: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+.contentTabs .horizontalNavigationArrow, .contentTabs.tabsHorizontalTop .contentTabsNav li.active a:after, .contentTabs.tabsHorizontalBottom .contentTabsNav li.active a:before {
+  left: 46%;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.contentTabs .verticalNavigation, .contentTabs.tabsVerticalLeft .contentTabsNav, .contentTabs.tabsVerticalRight .contentTabsNav {
+  width: 180px;
+  height: 450px;
+}
+.contentTabs .verticalNavigation li, .contentTabs.tabsVerticalLeft .contentTabsNav li, .contentTabs.tabsVerticalRight .contentTabsNav li {
+  border-bottom: 1px solid #dddddd;
+}
+.contentTabs.tabsVerticalLeft .contentTabsNav {
+  float: left;
+  border-right: 1px solid #dddddd;
+}
+.contentTabs.tabsVerticalLeft .contentTabsNav li.active a:after {
+  right: -12px;
+  border-left: 12px solid #007bc1;
+}
+.contentTabs.tabsVerticalLeft .contentTabsNav a {
+  padding-left: 10px;
+}
+.contentTabs.tabsVerticalLeft .contentTabsPanelCollection {
+  float: right;
+  width: 766px;
+}
+.contentTabs.tabsVerticalRight .contentTabsNav {
+  float: right;
+  border-left: 1px solid #dddddd;
+}
+.contentTabs.tabsVerticalRight .contentTabsNav li.active a:before {
+  left: -12px;
+  border-right: 12px solid #007bc1;
+}
+.contentTabs.tabsVerticalRight .contentTabsNav a {
+  padding-right: 10px;
+}
+.contentTabs.tabsVerticalRight .contentTabsPanelCollection {
+  float: left;
+  width: 766px;
+}
+.contentTabs .horizontalNavigation ul, .contentTabs.tabsHorizontalTop .contentTabsNav ul, .contentTabs.tabsHorizontalBottom .contentTabsNav ul {
+  text-align: center;
+}
+.contentTabs .horizontalNavigation li, .contentTabs.tabsHorizontalTop .contentTabsNav li, .contentTabs.tabsHorizontalBottom .contentTabsNav li {
+  display: inline-block;
+  border-left: 1px solid white;
+  border-bottom: none;
+  float: left;
+  width: 25%;
+}
+.contentTabs .horizontalNavigation li:first-child, .contentTabs.tabsHorizontalTop .contentTabsNav li:first-child, .contentTabs.tabsHorizontalBottom .contentTabsNav li:first-child {
+  border-left: none;
+}
+.contentTabs.tabsHorizontalTop .contentTabsNav li.active a:after {
+  border-bottom: 5px solid white;
+  bottom: 0;
+}
+.contentTabs.tabsHorizontalBottom .contentTabsNav {
+  position: relative;
+  top: 470px;
+}
+.contentTabs.tabsHorizontalBottom .contentTabsNav ul {
+  border-top: 1px solid #dddddd;
+}
+.contentTabs.tabsHorizontalBottom .contentTabsNav li.active a:before {
+  border-top: 5px solid white;
+  top: 0;
+}
+.contentTabs.tabsHorizontalBottom .contentTabsPanelCollection {
+  margin-top: -35px;
+  margin-bottom: 35px;
+}
+.contentTabs.tabsNone .contentTabsNav {
+  display: none;
+}
+.contentTabs .contentTabsPanel {
+  display: none;
+  padding: 10px;
+  color: #444;
+  height: 430px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.contentTabs .contentTabsPanel:first-child {
+  display: block;
+}
+.contentTabs .contentTabsPanel p {
+  margin: 0 0 10px !important;
+}
+.contentTabs .contentTabsPanel h3 {
+  font-size: 16px !important;
+  margin: 0 0 5px !important;
+}
+.contentTabs .contentTabsPanel .contentTabsPanelIntroGraphic {
+  border: 1px solid #ccc !important;
+  float: right;
+  margin: 0 0 10px 10px;
+}
+.contentTabs.pinnedPanelTop .contentTabsPanel {
+  padding: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 450px;
+}
+.contentTabs.pinnedPanelTop .contentTabsPanelContent {
+  height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.contentTabs.pinnedPanelTop .contentTabsPanelIntro {
+  height: 100px;
+  background-color: #ececec;
+  padding: 15px 20px;
+  margin: 0 0 10px;
+  border-bottom: 1px solid #007bc1;
+  overflow: hidden;
+}
+.contentTabs.pinnedPanelLeft .contentTabsPanel {
+  clear: both;
+  height: auto;
+  padding: 2px 0 0 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.contentTabs.pinnedPanelLeft .contentTabsPanelContent {
+  float: right;
+  height: 450px;
+  width: 690px;
+  padding: 0 10px 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.contentTabs.pinnedPanelLeft .contentTabsPanelIntro {
+  float: left;
+  width: 245px;
+  padding: 10px;
+  background-color: white;
+  border-right: 1px solid transparent;
+  height: auto;
+  overflow: hidden;
+}
+.contentTabs.pinnedPanelLeft .contentTabsPanelIntro #assetParent {
+  margin-left: 10px;
+}
+.contentTabs.pinnedPanelLeft .contentTabsPanelIntro .contentTabsFeaturedContent {
+  background: url(../images/featuredContentTopGradient.png) top left repeat-x, url(../images/featuredContentBottomGradient.png) bottom left repeat-x;
+  background-color: #fff;
+  border: 1px solid #d4dce0;
+  min-height: 200px;
+  padding: 10px 8px;
+  width: 225px;
+}
+.contentTabs.pinnedPanelLeft .contentTabsPanelIntro .contentTabsFeaturedContent:first-child {
+  margin-bottom: 10px;
+}
+.contentTabs.pinnedPanelLeft .contentTabsPanelIntro .contentTabsFeaturedContent .contentTabsPanelBanner {
+  background: url(../images/featuredContentRibbon.png) no-repeat 0 0;
+  height: 15px;
+  margin-left: -8px;
+  width: 122px;
+  color: #fff;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 10px !important;
+  font-weight: normal !important;
+  line-height: 15px !important;
+  padding-left: 8px !important;
+}
+.contentTabs.pinnedPanelLeft .contentTabsPanelIntro .contentTabsFeaturedContent h3 {
+  color: #005c8b;
+  font-size: 16px;
+  line-height: 1.2em !important;
+  margin: 18px 0 10px !important;
+}
+.contentTabs.pinnedPanelLeft .contentTabsPanelIntro .contentTabsFeaturedContent p {
+  color: #000;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4em;
+}
+.contentTabs.pinnedPanelLeft .contentTabsPanelIntro .contentTabsFeaturedContent a {
+  background: #007bc1;
+  border-radius: 5px;
+  color: #fff !important;
+  display: inline-block;
+  font-size: 11px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  width: 117px;
+}
+.contentTabs.pinnedPanelLeft .contentTabsPanelIntro .contentTabsFeaturedContent a:hover {
+  background: #005a8e;
+  text-decoration: none !important;
+}
+.contentTabs.pinnedPanelLeft .oneColList, .contentTabs.pinnedPanelLeft .twoColGrid {
+  clear: none;
+}
+.contentTabs.pinnedPanelLeft .contentTabsPanelIntroGraphic {
+  float: none;
+  margin: 0 0 10px;
+}
+.contentTabs .explode {
+  width: 100% !important;
+}
+.contentTabs .explode.contentTabsPanelIntro {
+  padding: 10px 8px 0 8px !important;
+}
+.contentTabs .explode.contentTabsPanelIntro .contentTabsFeaturedContent {
+  width: 100%;
+  padding: 0;
+  min-height: 0;
+  border: 0;
+  background: none;
+  margin-bottom: 0;
+}
+
+/* may or may not be used */
+.contentTabsCaption {
+  color: #666;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 5px !important;
+}
+
+@media only screen and (max-width: 960px) {
+  #contentCompress {
+    margin: 0 auto;
+    max-width: 980px !important;
+    width: 98% !important;
+  }
+  #contentCompress #micrositeHeader #micrositeHeaderBanner h1 {
+    line-height: 1em;
+    padding: 18px 0 20px;
+    margin-left: 79px;
+  }
+  #contentCompress .wayfinder.wayfinderImage, #contentCompress .wayfinder.wayfinderVideo {
+    height: 100% !important;
+  }
+  #contentCompress .wayfinder.wayfinderVideo h2 {
+    width: 100%;
+  }
+  #contentCompress .wayfinder.wayfinderVideo .wayfinderContent {
+    width: 93%;
+  }
+  #contentCompress .contentTabs {
+    width: 100% !important;
+  }
+  #contentCompress .contentTabs .contentTabsPanelIntro {
+    width: 100%;
+    padding: 55px 8px 0 8px !important;
+  }
+  #contentCompress .contentTabs .contentTabsPanelIntro .contentTabsFeaturedContent {
+    width: 100%;
+    padding: 0;
+    min-height: 0;
+    border: 0;
+    background: none;
+    margin-bottom: 0;
+  }
+  #contentCompress .contentTabs .contentTabsPanelIntro .contentTabsFeaturedContent:last-child {
+    border-bottom: 1px solid #ddd;
+  }
+  #contentCompress .contentTabs .contentTabsPanelIntro .contentTabsFeaturedContent a {
+    background: none;
+    border-radius: 0;
+    color: #007bc1 !important;
+    font-size: 12px;
+    font-weight: bold;
+    height: auto;
+    line-height: 1;
+    margin: 20px 0;
+    width: auto;
+  }
+  #contentCompress .contentTabs.pinnedPanelLeft .contentTabsPanel {
+    padding: 0 !important;
+  }
+  #contentCompress .contentTabs.pinnedPanelLeft .contentTabsPanelContent {
+    overflow-y: hidden;
+    height: auto !important;
+    float: none !important;
+    width: 100% !important;
+  }
+  #contentCompress .contentTabs .subMenu li a {
+    height: 45px !important;
+    line-height: 45px !important;
+  }
+  #contentCompress .contentTabs .oneColList li {
+    margin: 5px 0;
+    padding: 15px 0 0;
+  }
+  #contentCompress .contentTabs .oneColList li p > a {
+    display: inline-block;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  #contentCompress .contentTabs .contentTabsPanel p {
+    margin: 0 !important;
+  }
+
+  .contentTabsNav ul {
+    position: absolute;
+    width: 100%;
+  }
+  .contentTabsNav ul li {
+    float: none !important;
+  }
+
+  .horizontalNavigationArrow, .contentTabs.tabsHorizontalTop .contentTabsNav li.active a:after, .contentTabs.tabsHorizontalBottom .contentTabsNav li.active a:before {
+    display: none;
+  }
+
+  .contentTabsPanelContent {
+    height: auto !important;
+    float: none !important;
+    width: 100% !important;
+  }
+
+  .dropDownButton {
+    border-bottom: 1px solid #333 !important;
+    width: 100% !important;
+  }
+  .dropDownButton a {
+    height: 45px !important;
+    line-height: 45px !important;
+  }
+  .dropDownButton a span {
+    margin-left: 5px;
+  }
+
+  #at4-share {
+    display: none;
+  }
+
+  #at4m-menu {
+    z-index: 999999;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 960px) {
+  .contentTabs .contentTabsPanel h3 {
+    font-size: 18px !important;
+  }
+  .contentTabs .contentTabsPanel p {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+  }
+
+  .oneColList > ul h4 a {
+    font-size: 18px;
+  }
+
+  .oneColList p {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+
+  .wayfinder {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
+  .wayfinder .wayfinderCornerstoneVideo {
+    float: none !important;
+    margin: 10px auto !important;
+    max-width: 482px !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .wayfinder .wayfinderCornerstoneVideo object {
+    width: 100%;
+  }
+  .wayfinder .wayfinderContent {
+    width: 100% !important;
+    padding: 0 20px;
+    height: auto;
+    margin: 0 !important;
+  }
+  .wayfinder .wayfinderContent h2 {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 640px) {
+  #micrositeHeader #micrositeHeaderBanner h1 {
+    font-size: 20px;
+  }
+
+  .wayfinder {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
+  .wayfinder .wayfinderCornerstoneVideo {
+    border: none !important;
+    float: none !important;
+    margin: 10px auto !important;
+    max-width: 482px !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .wayfinder .wayfinderCornerstoneVideo object {
+    width: 100%;
+  }
+  .wayfinder .wayfinderContent {
+    width: 100% !important;
+    padding: 0 20px;
+    height: auto;
+    margin: 0 !important;
+  }
+  .wayfinder .wayfinderContent h2 {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #micrositeHeader #micrositeHeaderBanner h1 {
+    font-size: 16px;
+  }
+
+  #micrositeContent {
+    margin: 0 5px;
+  }
+
+  .wayfinder.wayfinderVideo .wayfinderContent {
+    padding: 0 5px;
+    margin: 0;
+  }
+}

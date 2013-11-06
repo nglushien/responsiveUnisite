@@ -1,0 +1,161 @@
+@import "_configuration";
+
+#micrositeContainer {
+  border: 1px solid $microsite-border-color;
+}
+
+.componentHeader {
+  color: $microsite-content-header-color;
+  margin: 0 0 8px !important;
+}
+
+.micrositeModuleContainer {
+  margin: 0;
+
+  .micrositeModuleHeader {
+    margin: 0;
+
+    h3 { margin: 0; }
+
+  }
+
+}
+
+/* copy these along with content tabs since they're used in the panel views */
+.mediaBlock, .mediaBlockContent {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}
+
+.mediaBlock img {
+  float: left;
+  margin-right: 10px;
+  display: block;
+}
+
+.oneColList {
+  clear: both;
+
+  > ul {
+    clear: both;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+    overflow: hidden;
+
+    li {
+      border-top: 1px solid #ddd;
+      margin: 15px 0 5px;
+      padding: 15px 0 0;
+    }
+
+    .viewNow:before {content: '> ';}
+
+    > li:first-child {
+      border: none;
+      margin-top: 0;
+    }
+
+    h4 {
+      font-size: 16px;
+      margin: 0 0 5px !important;
+
+      a{
+        color: #666 !important;
+        font-family: $hn-font-stack;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.5;
+
+        &:visited{
+          color:#333 !important;
+        }
+      }
+
+    }
+
+    p {
+      margin: 0 0 5px !important;
+
+      a{
+        color:#007bc1 !important;
+
+        &:visited{color:#007bc1 !important;}
+      }
+    }
+
+  }
+
+}
+
+.twoColGrid {
+  clear: both;
+
+  > ul {
+    clear: both;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+    overflow: hidden;
+
+    > li {
+      clear: left;
+      border-top: 1px solid #ddd;
+      overflow: hidden;
+
+      &:first-child {
+        border: none;
+        margin-top: 0;
+      }
+
+    }
+
+  }
+
+  .gridItem {
+    width: 46%;
+    float: left;
+    margin: 15px 10px;
+
+    &:first-child {
+      border-right: 1px solid #ddd;
+      padding-right: 10px;
+    }
+
+    p {
+      margin: 10px 0 0 !important;
+      line-height: 1.1 !important;
+    }
+
+    .mediaBlockImage {
+      width: 80px;
+      height: 100px;
+    }
+
+  }
+
+}
+
+/* Add class .group to parent container. IE8+. */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+#at4-share{
+    display: none !important;
+  }

@@ -1,0 +1,41 @@
+/* for embedded microsites */
+#micrositeAdvertisement {
+  border: 1px solid #b1b1b1;
+  border-bottom: none;
+  height: 25px;
+  background-color: #999;
+  color: #fff;
+  margin: 15px 0 0 0;
+  overflow: hidden;
+}
+#micrositeAdvertisement img {
+  float: left;
+  margin: 5px 15px 0;
+}
+#micrositeAdvertisement a {
+  background: url("../images/whatsThisArrow.png") no-repeat 5px 9px;
+  color: #fff;
+  float: left;
+  font-size: 12px;
+  margin: 0;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+#micrositeAdvertisement #micrositeClose {
+  float: right;
+}
+
+#micrositeAdvertisement #micrositeClose a {
+  font-weight: normal;
+  background: url(../images/iconMicrositeClose.png) 7px 6px no-repeat;
+  line-height: 14px;
+  padding: 5px 10px 0 20px;
+  display: block;
+  font-size: 12px;
+  color: #fff;
+}
+
+#micrositeAdvertisement #micrositeClose a:hover {
+  text-decoration: none;
+}

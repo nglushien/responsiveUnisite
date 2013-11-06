@@ -1,0 +1,154 @@
+/* Navigation */
+
+#whatIsThis
+{
+    margin-left:245px;
+    *margin-left: 0;
+    position: absolute;
+    zoom:1;
+    z-index: 9999;
+}
+
+#whatIsThis li {
+  float:left;
+  display:block;
+  height:25px;
+  position:relative;
+  z-index:500;
+
+  }
+  
+
+#whatIsThis li a {
+  border-top: 0;
+  border: 1px solid #999;
+  border-bottom: 0;
+  display:block;
+  font-size:11px;
+  font-weight:300;
+  height:24px;
+  padding: 0 15px;
+  text-decoration:none;
+  color:#fff;
+  position: relative;
+  z-index: 1;
+  }    
+
+#whatIsThis a.selected {
+  color:#444;
+  background: #fff;
+  }
+
+#whatIsThis ul {
+  box-shadow: 0px 10px 15px 0px #333;
+  border:1px solid #ccc;
+  position:absolute;
+  left:0;
+  display:none;
+  margin:0;
+  padding:0;
+  list-style:none;
+  width:auto;
+  background:#fff;
+  top:24px;
+  }
+  
+  #whatIsThis li a:hover{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+      background:#fff url("../images/whatsThisArrowHover.png")no-repeat 5px 10px;
+  color:#444;
+  text-decoration:none;
+      cursor: pointer;
+}
+
+#whatIsThis li ul li a:first-child{
+  background:#fff url("../images/whatsThisArrowHover.png")no-repeat 5px 10px;
+  border-radius: 0;
+  color:#444 !important;
+  font-size: 11px;
+  font-weight:300;
+  height:24px;
+  padding: 6px 15px 0;
+  text-decoration:none;
+  position: absolute;
+  top: -24px;
+  left: 0;
+  z-index: 10;
+}
+
+#whatIsThis li ul li a.close{
+  background:#fff url("../images/WhatIsThis_Close.png")no-repeat 5px 6px;
+  color:#666 !important;
+  float: right;
+  font-size: 12px !important;
+  font-weight: bold;
+  padding: 5px 0 0 18px;
+  text-decoration:none;
+  cursor: pointer;
+}
+
+#whatIsThis li ul li 
+{
+      display:block;  
+  color:#444;
+      height: auto;
+  text-decoration:none;
+  width:440px;
+  margin:0 2px 9px 0;
+  padding:5px 20px 20px;
+
+      h4{font-size: 16px;}
+
+      p{font-size: 12px;line-height: 1.5em;}
+  }
+
+  
+
+
+
+
+  #whatIsThis li ul h4{
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0 10px;
+  }
+  
+  #whatIsThis li ul p{
+    color: #444;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5em !important;
+    margin: 25px 0 0 !important;
+  }
+
+#whatIsThis li ul a {
+  background:#0e68c8;
+      border-radius: 3px;
+      border:0 !important;
+      color: #fff !important;
+      display:block;  
+      font-size:12px; 
+      height: 12px;
+      line-height: 1;
+  color:#20204e;
+  padding:8px 15px;
+  text-decoration:none;
+  }
+
+#whatIsThis li ul a:hover {
+  background:darken(#0e68c8,10%);
+  border-radius: 3px;
+      border:0 !important;
+      color: #fff !important;
+      display:block;  
+      font-size:12px; 
+      height: 12px;
+      line-height: 1;
+  color:#20204e;
+  padding:8px 15px;
+  text-decoration:none;
+
+  }
+
+
+
